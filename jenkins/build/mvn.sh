@@ -5,5 +5,5 @@ echo "** Building jar ***********"
 echo "***************************"
 
 WORKSPACE=/var/jenkins_home/workspace/pipeline-docker-maven
-
+cd /var/jenkins_home/workspace/pipeline-docker-maven
 mvn package
