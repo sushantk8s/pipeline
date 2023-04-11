@@ -4,5 +4,6 @@ echo "***************************"
 echo "** Testing the code ***********"
 echo "***************************"
 WORKSPACE=/home/jenkins/jenkins-data/jenkins_home/workspace/pipeline-docker-maven
-cd /home/jenkins/jenkins-data/jenkins_home/workspace/pipeline-docker-maven/java-app
+cd var/jenkins_home/workspace/pipeline-docker-maven/java-app
+pwd
 mvn test
