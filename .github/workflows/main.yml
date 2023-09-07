@@ -8,13 +8,13 @@ jobs:
         
   deploy-staging:
     name: Deploy to staging
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: echo Deploy to staging using ${{ secrets.mysecret-stag }}
         
   deploy-production:
     name: Deploy to production
     needs: [deploy-staging]
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: echo Deploy to production using ${{ secrets.mysecret-prod }}
