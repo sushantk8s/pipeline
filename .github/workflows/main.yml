@@ -7,7 +7,7 @@ on:
 jobs:
         
   deploy-staging:
-    name: Deploy to staging
+    name: Deploy to staging test
     runs-on: self-hosted
     steps:
       - run: echo Deploy to staging using ${{ secrets.mysecret-stag }}
