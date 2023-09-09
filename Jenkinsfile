@@ -24,7 +24,7 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Test1') {
             steps {
                 sh './jenkins/test/mvn.sh mvn test'
             }
