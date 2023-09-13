@@ -9,7 +9,9 @@ public class App
     private final String message = "Hello from Pipeline!";
 
     public App() {}
-
+/**
+ * Hello world!
+ */
     public static void main(String[] args) {
         System.out.println(new App().getMessage());
     }
