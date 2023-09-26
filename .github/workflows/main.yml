@@ -10,11 +10,11 @@ jobs:
     name: Deploy to staging test
     runs-on: cb
     steps:
-      - run: echo $newvar Deploy to staging using 
+      - run: echo ${newvar} Deploy to staging using 
         
   deploy-production:
     name: Deploy to production
     needs: [deploy-staging]
     runs-on: cb
     steps:
-      - run: echo $newvar Deploy to production using 
+      - run: echo ${newvar} Deploy to production using 
