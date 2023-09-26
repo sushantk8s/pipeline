@@ -10,11 +10,11 @@ jobs:
     name: Deploy to staging test
     runs-on: cb
     steps:
-      - run: echo Deploy to staging using ${{ secrets.mysecret-stag }}
+      - run: echo Deploy to staging using $newvar
         
   deploy-production:
     name: Deploy to production
     needs: [deploy-staging]
     runs-on: cb
     steps:
-      - run: echo Deploy to production using ${{ secrets.mysecret-prod }}
+      - run: echo Deploy to production using $newvar
